@@ -1,0 +1,365 @@
+*{
+    box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+  float: left;
+  padding: 8px;
+}
+
+/*...................................media quary සෙට් එක ........................................*/
+
+@media screen and (max-width:700px){
+  [class*="col-"] {
+    width: 100%;
+
+  }
+
+  .navigation{
+    margin-bottom: 2%;
+
+  }
+
+  .nav_item > a {
+
+    float: none;
+    text-align: left;
+    padding: 1%;
+    font-size: 2vw;
+  }
+
+  #logo{
+    display:none;
+  }
+
+  .footer-site-map{
+    margin-left:0% !important; 
+  }
+
+  .p1,.p2{
+    width:100%!important;
+    margin: 0%!important;
+    text-align: center;
+    line-height:2px;
+    font-size: 2.2vw!important;
+  }
+  .company_details {
+    margin-left: 2% !important;
+    margin-right: 5%!important ;
+    }
+  .footer-body{
+    text-align: center!important;
+  }
+}
+
+
+
+@media screen and (min-width:700px) and (max-width:1226px){
+  .nav_item > a {
+    font-size: 1.5vw;
+    padding:1%;
+  }
+
+  #logo{
+    margin-right: 5%;
+    width:15% !important;
+
+  }
+
+
+}
+
+
+
+@media screen and (min-width:700px) and (max-width:930px){
+  .p1,.p2{
+    width:100%!important;
+    text-align: center;
+    margin-left: 0%!important;
+    margin-right: 0%!important;
+    margin-bottom: 0%!important;
+    line-height:2px;
+  }
+  .p2{
+    margin-top: 0%!important;
+  }
+    .contact_details,.footer-site-map,.company_details{
+      font-size: 1.5vw !important;
+
+    }
+
+    .company_details {
+    margin-left: 0% !important;
+    margin-right: 7%!important ;
+    }
+
+    .footer-site-map {
+    margin-left: 0% !important;
+    margin-right: 7%!important ;
+    }
+
+  .fab {
+    width: 20px !important;
+    margin-right: 9px !important;
+
+}
+
+
+}
+@media screen and (min-width:930px) and (max-width:1260px){
+  .p1,.p2{
+    width:100%!important;
+    text-align: center;
+    margin-left: 0%!important;
+    margin-right: 0%!important;
+    margin-bottom: 0%!important;
+    line-height:2px;
+
+  }
+  .p2{
+    margin-top: 0%!important;
+    padding-top: 0%;
+
+  }
+
+
+
+}
+
+
+
+/* ---------------------------------------------------header එක--------------------------------------------------*/
+#logo {
+    padding-left: 1.5%;
+    margin-right:15%;
+}
+
+.navigation{
+    display:flex;
+    background-color: white;
+    font-size: 24px;
+    font-family:sans-serif;
+    text-indent: 20px;
+    padding:0.5%;
+    box-shadow: 3px 2px 12px 1px #0ff;
+    transition: top 0.3s;
+    overflow:hidden;
+    top:0 !important;
+    position: relative;
+
+
+}
+
+.nav_item{
+    color:#00000080;
+    text-decoration-line: none;
+    font-size: 1.3vw;
+    font-weight: 550;
+    text-transform: uppercase;
+    transition: .4s;
+    padding: 0 12px;
+    align-items: center;
+    float:left;
+    padding-top: 0.7%;
+    display: block;
+
+
+}
+
+
+.nav_item:hover{
+    color: #000;
+    text-decoration: none;
+    font-weight: bolder;
+    
+
+}
+
+#nav_item5-active,#nav_item4-active,#nav_item3-active,#nav_item2-active,#nav_item1-active{
+    color: #000;
+}
+
+
+
+
+
+/* ---------------------------------------------------footer එක--------------------------------------------------*/
+#ruler{
+    margin-top: 5%;
+	width:75%;
+    margin-bottom:0%;
+    text-align:center;
+}
+
+
+
+
+.footer-body {
+    background-image: url("../Images/home_page/footer_background.jpg");
+    background-size: cover;
+    background-position: center;
+
+    margin-top: 7%;
+    padding-top:3%;
+    padding-left: 3%;
+    padding-right:3%;
+
+
+}
+
+.company_details {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 2.3;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    margin-left: 5%;
+    margin-right: 2%;
+}
+
+.footer-site-map,.footer-site-map >a {
+	color: #ffffff;
+    font-size: 15px;
+    line-height: 2.3;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    text-decoration-line: none;
+    margin-left: 3%;
+    margin-right: 2%;
+}
+
+.contact_details,.contact_details > a {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 22px;
+    display: block;
+
+}
+
+.contact_details a:hover {
+    color: #a7a7a7;
+    text-decoration: none;
+}
+
+.contact_details .address {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 2.5;
+    font-weight: 400;
+}
+
+
+.footer-copyrights{
+    float:left;
+    color: #ffffff;
+}
+
+.p1{
+    float: left;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 2%;
+    margin-left: 25%;
+
+    text-align: center;
+}
+
+.p2{
+    float: left;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 2%;
+    margin-right: 20%;
+    text-align: center;
+
+}
+
+
+
+
+.media-icon >  a {
+  text-align: center;
+
+  margin-bottom: 2rem;
+  color: #eee;
+}
+
+
+.fab {
+  font-size: 2rem;
+  margin: 0.3rem;
+}
+
+
+/*.................................icon/images hover effect එක .............*/
+.fa-facebook,
+.fa-codepen,
+.fa-youtube,
+.fa-instagram,
+.fa-github,
+.fa-pinterest {
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+/*................................ social media icons hover color ........................*/
+.fa-facebook:hover,
+.fa-facebook:focus {
+  color: #1877f2;
+  transform: scale(1.1);
+}
+
+.fa-twitter:hover,
+.fa-twitter:focus {
+  color: #1da1f2;
+  transform: scale(1.1);
+}
+
+.fa-youtube:hover,
+.fa-youtube:focus {
+  color: #df2426;
+  transform: scale(1.1);
+}
+
+.fa-instagram:hover,
+.fa-instagram:focus {
+  color: #bd22a2;
+  transform: scale(1.1);
+}
+
+.fa-github:hover,
+.fa-github:focus {
+  color: #000;
+  transform: scale(1.1);
+}
+
+.fa-github:hover,
+.fa-github:focus {
+  color: #000;
+  transform: scale(1.1);
+}
+
+.fa-codepen:hover,
+.fa-codepen:focus {
+  color: #000;
+  transform: scale(1.1);
+}
+
+.fa-pinterest:hover,
+.fa-pinterest:focus {
+  color: #b3001b;
+}

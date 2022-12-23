@@ -1,0 +1,196 @@
+*{
+	box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+  float: left;
+}
+
+
+
+@media screen and (max-width:700px){
+  [class*="col-"] {
+    width: 100%;
+    text-align: center;
+  }
+
+
+  #hed{
+    text-align: center;
+    margin-top: 25% !important;
+    padding-top: 2%;
+
+  }
+
+  input[type=submit],input[type=reset]{
+    width: 100%;
+    margin-left: 0%!important;
+    margin-bottom:3%;
+
+  }
+
+  .btn{
+    margin-left: 0%!important;
+    margin-bottom: 8%;
+  }
+
+}
+
+@media screen and (min-width:700px) and (max-width:1322px){
+  .p1,.p2{
+    width:100%!important;
+    text-align: center;
+    margin-left: 0%!important;
+    margin-right: 0%!important;
+    margin-bottom: 0%!important;
+    line-height:2px;
+
+  }
+  .p2{
+    margin-top: 0%!important;
+    padding-top: 0%;
+
+  }
+
+}
+
+
+
+
+
+.navigation{
+    top:0;
+    left: 0;
+    right: 0;
+    position: fixed!important;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000;
+}
+.head{
+	text-align: center;
+	color: white;
+  margin-top:5%;
+  margin-left: 10%;
+  width: 75%;
+
+}
+#para{
+	color: white;
+	text-align: left;
+	font-size: 20px;
+  word-spacing: 18%;
+  letter-spacing:1.5px;
+  text-align: center;
+
+}
+
+h1{
+	color: white;
+}
+
+
+/*..................form............................................ */
+
+.form1{
+  	border-radius: 5px;
+  	background-color: #f2f2f2;
+  	padding: 2%;
+
+}
+input[type=text] {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+}
+label{
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.btn{
+  margin-left:18%;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top:5%;
+  margin-right:5%;
+
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+input[type=reset] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left:5%;
+}
+
+input[type=reset]:hover {
+  background-color: #45a049;
+}
+
+
+/*........................Top button ...............................*/
+
+#myBtn {
+
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}

@@ -1,0 +1,259 @@
+*{
+	box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+  float: left;
+}
+
+/*.............................media quaries ..................................*/
+
+@media screen and (max-width:602px){
+  [class*="col-"] {
+      width: 100% !important;
+      text-align: center;
+  }
+
+  #recent{
+    margin-top: 18%!important;
+    padding-top:10% !important;
+  }
+
+  .shadow{
+  margin-top:2%;
+  margin-left: 25% !important;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  padding: 3%!important;
+  text-align: center!important;
+
+}
+}
+
+@media screen and (min-width:602px) and (max-width:715px){
+	[class*="col-"] {
+  		width: 100% !important;
+  		text-align: center;
+	}
+
+	#recent{
+		margin-top: 18%!important;
+		padding-top:10% !important;
+	}
+  .shadow{
+    margin-top:2%;
+    margin-left: 35%;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    padding: 3%!important;
+    text-align: center!important;
+
+  }
+
+
+}
+
+@media screen and (min-width:715px) and (max-width:1268px){
+	.col-2{
+		width:30% !important
+	}
+
+  .p1,.p2{
+    width:100%!important;
+    text-align: center;
+    margin-left: 0%!important;
+    margin-right: 0%!important;
+    margin-bottom: 0%!important;
+    line-height:2px;
+
+  }
+  .p2{
+    margin-top: 0%!important;
+    padding-top: 0%;
+
+  }
+
+}
+
+
+
+#rated{
+	width:50%;
+	text-align:left !important;
+	margin-bottom: 2%;
+}
+
+
+#recent,#rated{
+	color:yellow;
+	font-family:-moz-fixed;
+	font-weight: 400;
+	padding-top:8%;
+	padding-left: 1%;
+
+}
+
+.navigation{
+    display:flex;
+    background-color: white;
+    font-size: 24px;
+    font-family:sans-serif;
+    text-indent: 20px;
+    padding:0.5%;
+    box-shadow: 3px 2px 12px 1px #0ff;
+    transition: top 0.3s;
+    overflow:hidden;
+    top:0;
+    left: 0;
+    right: 0;
+    position:absolute!important;
+}
+
+
+
+.row1,.row2,.row3{
+	float:left;
+	display: block;
+	text-align: left;
+}
+
+
+
+h4 > a{
+	color: white;
+	text-decoration: none;
+	font-family:-moz-fixed;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+span{
+	color:red;
+	font-size: 14px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000;
+}
+
+
+
+
+.row1,.row2,.row3 img{
+transition: 1s ease;
+}
+
+.shadow,.item:hover{
+-webkit-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+transition: 1s ease;
+filter: blur(5px)     /*        <<.........blur...*/
+visibility: visible; opacity: 1;
+}
+
+
+/*
+<div class="fullwrap">
+  <img src="cate.jpg"/>
+  <div class="shadow">
+    This will cover the entire image!<br>
+    <button>Click!</button>
+  </div>
+</div>*/
+
+
+
+.wrap {
+  position: relative; 
+
+
+}
+ 
+/* ............................shadow එක............................ */
+.shadow {
+  box-sizing: border-box;
+  width: 185px;
+  height: 278px;
+ 
+  /*........................  shadow POSITION ........................*/
+  position: absolute;
+  top: 0; left: 0;
+  text-align: left;
+  padding-top: 12%;
+  padding-right: 8%;
+  padding-left: 8%;
+ 
+   /* .................................COLORS ...............................*/
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 10px;
+  letter-spacing: .2px;
+}
+ 
+/* ............................shadow SHOW/HIDE............................ */
+.shadow {
+  visibility: none; opacity: 0;
+  transition: opacity 0.3s;
+}
+.wrap:hover .shadow {
+  visibility: visible; opacity: 1;
+}
+
+
+
+/*...........................download btn එක ..........................*/
+#downloadbtn{
+  background-color: #04AA6D;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top:2%;
+  margin-right:4%;
+
+}
+
+#downloadbtn:hover {
+  background-color: #45a049;
+}
+
+
+/*........................Top button ...............................*/
+
+#myBtn {
+
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
